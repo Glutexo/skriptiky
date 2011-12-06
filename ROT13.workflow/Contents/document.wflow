@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>330</string>
+	<key>AMApplicationVersion</key>
+	<string>2.2.1</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Spustit shell skript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>class String
+	def rot13
+		self.tr 'A-Ma-mN-Zn-z', 'N-Zn-zA-Ma-m'
+	end
+end
+
+ARGF.each do |f|
+	puts f.rot13
+end</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>0</integer>
+					<key>shell</key>
+					<string>/usr/bin/ruby</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>072E7485-B6D6-4D9D-9031-92191BB39886</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Skript</string>
+					<string>Příkaz</string>
+					<string>Spustit</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>AE58310F-B92A-4C11-9C7D-A97B35F7F5CE</string>
+				<key>UUID</key>
+				<string>811253F6-3131-4B7C-BF64-33DCD9ADCD50</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>300.000000:516.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/cs.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Spustit AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}		(* Your script goes here *)	display dialog input as text buttons {"OK"}		return inputend run</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>InputUUID</key>
+				<string>DF38F371-8783-4619-8409-588F52DCAC8C</string>
+				<key>Keywords</key>
+				<array>
+					<string>Spustit</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>3630B749-7F2E-4932-A902-E6012B0C9143</string>
+				<key>UUID</key>
+				<string>A78EDCCE-9013-4130-A8BE-F0DA34B95512</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>300.000000:333.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/cs.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>13C901E2-828D-4FCA-BD32-689DAD1F1977</key>
+		<dict>
+			<key>from</key>
+			<string>811253F6-3131-4B7C-BF64-33DCD9ADCD50 - 811253F6-3131-4B7C-BF64-33DCD9ADCD50</string>
+			<key>to</key>
+			<string>A78EDCCE-9013-4130-A8BE-F0DA34B95512 - A78EDCCE-9013-4130-A8BE-F0DA34B95512</string>
+		</dict>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>serviceApplicationBundleID</key>
+		<string></string>
+		<key>serviceApplicationPath</key>
+		<string></string>
+		<key>serviceInputTypeIdentifier</key>
+		<string>com.apple.Automator.text</string>
+		<key>serviceOutputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.servicesMenu</string>
+	</dict>
+</dict>
+</plist>
