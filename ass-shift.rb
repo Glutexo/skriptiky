@@ -1,5 +1,10 @@
 #!/usr/bin/ruby
 
+# Šoupátko prdelních titulků:
+# Použití: shift [soubor.ass] [-][počet sekund]
+#   záporná hodnota posouvá dozadu (titulky se objeví dřív)
+#   kladná dopředu (titulky se objeví později)
+
 src, shift = ARGV
 raise ArgumentError, 'Je potřeba zadat soubor s titulky' if src === nil
 src.match /\.([^\.]+)$/
